@@ -6,3 +6,20 @@
         bottom: 100%;
     }
 }
+@keyframes moving-right {
+    from{
+        left: -400px;
+    }
+    to{
+        left: 25%;
+    }
+}
+@keyframes moving-left {
+    from{
+        right: -400px;
+    }
+    to{
+        right: 25%;
+    }
+    
+}

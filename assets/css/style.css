@@ -43,16 +43,82 @@ header div input{
 
 /* section */
 section{
-
+    height: 100%;
+    background-color: #FFFFFF;
+    padding: 20px 50px;
 }
-
+h1{
+    text-align: center;
+    font-family: bold;
+    font-size: 30px;
+}
+p{
+    display: block;
+    font-size: 16px;
+    font-family: regular;
+    max-width: 800px;
+    width: 100%;
+    margin: auto;
+}
 .left-car, .right-car{
-    width: 50px;
+    max-width: 200px;
 }
+.left-car{
+    position: absolute;
+    left: 0px;
+    top: 40%;
+    animation-name: moving-right;
+    animation-delay: 0ms;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+}
+.para-right{
+    font-family: regular;
+    display: block;
+    max-width: 400px;    
+    position: absolute;
+    right: -400px;
+    top: 40%;
+    animation-name: moving-left;
+    animation-delay: 3s;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+}
+.right-car{
+    position: absolute;
+    right: -200px;
+    top: 80%;
+    animation-name: moving-left;
+    animation-delay: 9s;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+}
+.para-left{
+    font-family: regular;
+    display: block;
+    max-width: 400px;    
+    position: absolute;
+    left: -400px;
+    top: 80%;
+    animation-name: moving-right;
+    animation-delay: 6s;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+}
+
 
 /* footer */
 footer{
-    position: absolute;
+    position: relative;
+    z-index: -1;
     bottom: 0;
     width: 100%;
     background-color: #6cd47f;
@@ -93,7 +159,6 @@ h2{
 }
 .red-car{
     position: absolute;
-    z-index: 1;
     bottom: 0%;
     right: 113px;
     width: 27px;
@@ -105,7 +170,6 @@ h2{
 }
 .yellow-car{
     position: absolute;
-    z-index: 1;
     bottom: 0%;
     right: 158px;
     width: 27px;
