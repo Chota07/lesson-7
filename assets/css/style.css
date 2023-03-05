@@ -1,0 +1,119 @@
+/* header */
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background-color: #6cd47f;
+}
+header img{
+    width: 100px;
+    height: 100px;
+}
+header div{
+    display: flex;
+    align-items: center;
+}
+header div input{
+    border: 1px solid;
+    border-radius: 25px;
+    width: 600px;
+    height: 40px;
+    padding: 20px;
+    background-color: white;
+    margin-right: 115px;
+    font-family: regular;
+    box-shadow: 5px 5px #888888;
+}
+.search-btn{
+    position: absolute;
+    right: 55px;
+    height: 41px;
+    padding: 10px 15px;
+    border-radius: 25px;
+    border: 1px solid;
+    background-color: white;
+    font-family: bold;
+    box-shadow: 5px 5px #888888;
+}
+.search-btn:hover{
+    color: #6cd47f;
+}
+
+/* section */
+section{
+
+}
+
+.left-car, .right-car{
+    width: 50px;
+}
+
+/* footer */
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #6cd47f;
+    padding: 20px 40px 60px 40px;
+
+}
+h2{
+    margin-bottom: 30px;
+}
+.mixin{
+    display: inline;
+}
+.mobile, .email{
+	display: flex;
+	align-items: center;
+	font-family: "bold";
+}
+.mobile img, .email img{
+	background-color: #FFFFFF;
+	padding: 6px;
+	margin-right: 20px;
+	width: 30px;
+	height: 30px;
+	border-radius: 50px;
+}
+.mobile a, .email a{
+	font-size: 18px;
+	color: #FFFFFF;
+}
+.mobile{
+	margin-bottom: 20px;
+}
+.road{
+    position: absolute;
+    bottom: 0px;
+    right: 40px;
+    height: 100%;
+}
+.red-car{
+    position: absolute;
+    z-index: 1;
+    bottom: 0%;
+    right: 113px;
+    width: 27px;
+    animation-name: traffic;
+    animation-delay: 0ms;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.yellow-car{
+    position: absolute;
+    z-index: 1;
+    bottom: 0%;
+    right: 158px;
+    width: 27px;
+    transform: rotate(180deg);
+    animation-name: traffic;
+    animation-delay: 1s;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+}

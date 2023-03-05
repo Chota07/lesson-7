@@ -1,0 +1,8 @@
+@keyframes traffic {
+    from{
+        bottom: -100px;
+    }
+    to{
+        bottom: 100%;
+    }
+}
