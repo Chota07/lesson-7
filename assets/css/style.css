@@ -42,6 +42,9 @@ header div input{
 }
 
 /* section */
+body{
+    overflow-x: hidden;
+}
 section{
     height: 100%;
     background-color: #FFFFFF;
@@ -117,6 +120,7 @@ h1{
 
 /* footer */
 footer{
+    overflow-y: hidden;
     position: relative;
     z-index: -1;
     bottom: 0;
