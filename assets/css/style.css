@@ -52,7 +52,7 @@ h1{
     font-family: bold;
     font-size: 30px;
 }
-p{
+.main-para{
     display: block;
     font-size: 16px;
     font-family: regular;
